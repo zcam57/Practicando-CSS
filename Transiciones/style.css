@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    outline: 2px solid black;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+}
+
+.element{
+    height: 100px;
+    width: 100px;
+    background: crimson;
+    color: white;
+    font-family: Arial;
+    position: relative;
+    /* transition: all 1s; */
+    /* transition: recopila a property
+    |duratioon|timing-function|delay*/
+    clip-path: circle(70%);
+    /* transition-property: clip-path, transform;
+    transition-duration: 3s, 2s;
+    transition-timing-function: cubic-bezier(1,-1.24,0,1.95);
+    transition-delay: 0s, 3s; */
+
+    /* transition-timing-function: steps(6, end); */
+    /*ease|linear|ease-in|ease-out|ease-in-out  
+    lo de arriba pero con una sola propiedad*/
+    transition: clip-path .5s 0s, 
+                transform 1s .5s;
+}
+
+.container:hover .element{
+    transform: translate(100%);
+    clip-path: circle(50%);
+}

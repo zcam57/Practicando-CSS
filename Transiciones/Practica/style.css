@@ -1,0 +1,55 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color:red;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.spidy{
+    height: 550px;
+    transform: translateY(-120px);
+    transition: transform 1s;
+}
+
+.container:active .spidy{
+    transform: translateY(2px);
+}
+
+.triggers{
+    min-height: 100vh;
+}
+
+.presionar{
+    display: inline-block;
+    padding: 15px 46px;
+    margin: 30px auto;
+    background: red;
+    text-decoration: none;
+    color: white;
+    transition: background 1s;
+    
+}
+ 
+.presionar:active{
+    background: blueviolet;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin: 20px auto;
+    transition: transform 2s;
+}
+
+.square:target{
+    transform: rotate(360deg);
+}
