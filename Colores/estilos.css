@@ -1,0 +1,18 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 45px 0;
+    color:rgb(255, 255, 255);
+    background: rgb(78, 14, 138, 0.575);
+    background: #1b95aad5;
+    background: hsl(0, 100%, 50%);
+}
+
+.title{
+    text-align: center;
+
+}
