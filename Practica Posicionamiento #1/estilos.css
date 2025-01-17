@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Raleway", serif;
+    min-height: 200vh;
+}
+
+.header{
+    background: url(Img/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
+    height: 100vh;
+    padding: .1px;
+    background-image: #44A08D;  /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(to left, #09363754, #44a08d75), url(img/luca-bravo-XJXWbfSo2f0-unsplash.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(to left, #09363757, #44a08d59), url(img/luca-bravo-XJXWbfSo2f0-unsplash.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.container-text{
+    text-align: center;
+    margin-top: 150px;
+    color: white;
+}
+
+
+.title{
+    font-size: 50px;
+}
+
+.text{
+    font-size: 30px;
+    font-weight: 50;
+    margin: 20px 0;
+}
+
+.submit{
+    display: inline-block;
+    background: white;
+    color: blue;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.submit:hover{
+    background: blue;
+    color: white;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
