@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100% );
+    --gradient1: linear-gradient(135deg, #667eea86 0%, #764ba286 100% );
+    --url-img: url("img/mac.jpg");
+    --box-shadow: 6px 6px 10px rgba(0,0,0,.6);
+    --width: 100%;
+    --radius: 8px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Raleway", serif;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: var(--gradient1), var(--url-img);
+}
+
+.form{
+    width: 400px;
+    background: white;
+    margin: 70px auto;
+    padding: 30px 20px 40px;
+    text-align: center;
+    border-radius: var(--radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.input{
+    width: var(--width);
+    padding: 20px 5px;
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.input, .form__submit{
+    font-family: inherit;
+}
+
+.form__title{
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.form__message{
+    max-width: var(--width);
+    min-width: var(--width);
+    min-height: 150px;
+    max-height: 15px;
+}
+
+.form__submit{
+    display: block;
+    width: var(--width);
+    font-size: 18px;
+    background-image: var(--gradient);
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form__submit:hover{
+    background-image:  var(--gradient1);
+    transition: background-image .3s;
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    padding: 80px 0;
+    background-repeat: no-repeat
+  }  
+  
+  .form{
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+    body{
+        padding: 30px 0;
+    }
+
+    .form{
+        width: 80%;
+    }
+
+    .form__title{
+        font-size: 1.5rem;
+    }
+
+    .font__submit{
+        font-size: 16px;
+    }
+}
