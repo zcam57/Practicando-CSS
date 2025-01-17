@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background: #dfd7d7;
+}
+
+.container{
+    display: flex;
+}
+
+.item{
+    background: tomato;
+    width: 200px;
+    height: 200px;
+}
+
+.item1{
+    border: 5px dashed #fff;
+}
+
+.item2{
+    background: slateblue;
+}
+
+.title{
+    margin-top: 20px;
+    background: black;
+    color: white;
+    font-weight: bold;
+}
