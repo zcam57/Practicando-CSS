@@ -1,0 +1,40 @@
+h2{
+    color: blue
+}
+
+.mac{
+    border: 1px solid black;
+}
+
+#section{
+    border: 20px solid lawngreen;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.😁{
+    color: darkblue;
+}
+
+[href]{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+[href="https://www.google.com/"]{
+    color: aqua;
+}
+
+[href ^="httsps"]{
+    color: darkgoldenrod;
+}
+
+[href$="org"]{
+    color: red;
+}
+
+[href*="mac"]{
+    background-color: yellow;
+}
