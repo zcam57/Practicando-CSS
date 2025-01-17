@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", serif;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content:  center;
+}
+
+.cta{
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #6d7bf3;
+    display: flex;
+    opacity: 0;
+    transition: opacity 1s 1.5s;
+    pointer-events: none;
+}
+
+.modal:target{
+    opacity: 1;
+    pointer-events: unset;
+    transition-delay: 0s;
+}
+
+.modal__container{
+    position: relative;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 10px;
+    border-radius: 16px;
+    max-width: 1200px;
+    align-items: center;
+    overflow: hidden;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transition: clip-path 1s;
+}
+
+.modal:target .modal__container{
+     animation: showModal 2s 1.5s both;
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@keyframes showModal {
+
+    0%{
+        transform: translateY(-200%) rotate(10deg);
+    }
+    
+    50%{
+        transform: translateY(0) rotate(-10deg);
+    }
+
+
+    100%{
+        opacity: 1;
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+.modal__img{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal__close{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.modal_texts{
+    width: 90%;
+}
+
+.modal__title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.modal__paragraph{
+    line-height: 1.7;
+}

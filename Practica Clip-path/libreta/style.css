@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    min-height: 100vh;
+}
+
+.book{
+    width: 410px;
+    height: 500px;
+    padding: 50px 0 45px 70px;
+    margin: auto;
+    border: 1px solid #000;
+    background-color: #e0e0e0;
+    opacity: 0.9;
+    background-size: 30px 30px;
+    background-image:  repeating-linear-gradient(0deg, #000, #000 1.5px, #e0e0e0 1.5px, #e0e0e0);
+    position: relative;
+}
+
+.book__img{
+    width: 80px;
+    height: 80px;
+    top: -30px;
+    right: -30px;
+    position: absolute;
+    transform: scale(0);
+    animation: img 1s forwards;
+}
+
+@keyframes img{
+    to{
+        transform: scale(1);
+    }
+    
+}
+
+.book__title{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    animation: title 1s 1s forwards;
+}
+
+@keyframes title{
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    
+}
+
+.book__paragraph{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    animation: title 1s 2s forwards;
+}
+
+
+
+.line{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    background-color: crimson;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    border-radius: 50%;
+    box-shadow: 0 170px 0 white , 0 320px white;
+}
+
+.line-h{
+    background: rgb(113,113,113);
+    background: linear-gradient(270deg, rgba(113,113,113,1) 0%, rgba(240,240,240,1) 50%, rgba(186,186,186,1) 100%);
+    position: absolute;
+    width: 50px;
+    height: 15px;
+    top:95px;
+    left: -25px;
+    border-radius: 50px;
+    box-shadow: 0 170px ;
+}
+
+.line-h::before{
+   content: "";
+   background: rgb(113,113,113);
+   background: linear-gradient(270deg, rgba(113,113,113,1) 0%, rgba(240,240,240,1) 50%, rgba(186,186,186,1) 100%);
+   position: absolute;
+   width: 50px;
+   height: 15px;
+   top:170px;
+   border-radius: 50px;
+}
+
+.line-h::after{
+    content: "";
+    background: rgb(113,113,113);
+    background: linear-gradient(270deg, rgba(113,113,113,1) 0%, rgba(240,240,240,1) 50%, rgba(186,186,186,1) 100%);
+    position: absolute;
+    width: 50px;
+    height: 15px;
+    top:320px;
+    border-radius: 50px;
+
+ }
