@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 98%;
+    margin: 0 auto;
+}
+
+.box{
+    display: block;
+    background: slateblue;
+    width: 55px;
+    height: 55px;
+    margin: 10px 0;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 55px;
+    color: white;
+    font-weight: bold;
+}
+
+.container{
+    margin-left: -5px;
+    padding: 10px 0;
+    border: 3px solid crimson;
+}
+
+/* Filtrar por su tipo */
+
+/* div:only-of-type{
+    background: tomato;
+} */
+
+/* .box:first-of-type{
+    background: tomato;
+} */
+
+/* .box:last-of-type{
+    background: tomato;
+} */
+
+/* .box:nth-of-type(odd){
+    background: tomato;
+} */
+
+/* .box:nth-last-of-type(1){
+background: tomato;
+} */
+
+/* .box:only-child{
+    background: tomato;
+} */
+ 
+/* .box:first-child{
+    background: tomato;
+} */
+
+/* div:last-child{
+    background: tomato;
+} */
+
+/* .container :nth-child(2){
+    background: crimson;
+} */
+
+.container :nth-last-child(1){
+    background: crimson;
+}
