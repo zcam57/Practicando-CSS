@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --clip: circle( 0 at top right);
+    --transitionModal: .5s transform;
+    --show: scale(0);
+    --transitionBackground: 1s .5s clip-path;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Raleway", serif;
+    height: 100vh;
+    display: flex;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    clip-path: var(--clip);
+    transition: var(--transitionBackground);
+}
+
+.modal:target {
+    --clip:circle( 150% at top right);
+    --show: scale(1);
+    --transitionModal: .5s 1s transform;
+    --transitionBackground: 1s  clip-path;
+}
+
+
+.modal__container{
+    margin: auto;
+    background: white;
+    width: 90%;
+    max-width: 1200PX;
+    min-height: 70%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    position: relative;
+    transform: var(--show);
+    transition: var(--transitionModal);
+}
+
+.modal__close{
+    position: absolute;
+    background: crimson;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.modal__img{
+    grid-row: 1/-1;
+    grid-column: 1/4;
+    width: 80%;
+    place-self: center;
+}
+
+.modal__text{
+    grid-row: 2/-2;
+    grid-column:4/-2;
+    place-self: center;
+    display: grid;
+    gap: 20px;
+    justify-items: start;
+}
+.modal__title{
+    font-size: 3rem;
+}
+
+.modal__paragraph{
+    font-size: 1.3rem;
+}
+
+.modal__cta{
+    display: inline-block;
+    margin: auto;
+    text-decoration: none;
+    background: blueviolet;
+    padding: 15px 50px;
+    color: white;
+
+
+}
+
+@media screen and (max-width: 800px){
+
+    .modal__title{
+        font-size: 2rem;
+    }
+    
+    .modal__paragraph{
+        font-size: 1rem;
+    }
+    
+    .modal__cta{
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .modal__title{
+        font-size: 1rem;
+    }
+    
+    .modal__paragraph{
+        font-size: .7rem;
+    }
+    
+    .modal__cta{
+        padding: 8px 15px;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .modal__container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .modal__img{
+        grid-row: 1/2;
+        grid-column: 1/3;
+        width: 50%;
+    }
+    
+    .modal__text{
+        grid-row: 2/3;
+        grid-column:1/3;
+    }
+
+    .modal__title{
+        font-size: 2.5rem;
+    }
+    
+    .modal__paragraph{
+        font-size: 1rem;
+    }
+    
+}
