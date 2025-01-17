@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root{
+    --height: 80px;
+}
+
+.container{
+    width: 400px;
+    /* max-width: 600px; */
+    height: 600px;
+    outline: 2px solid black;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    /* flex-direction: column;                
+    flex-wrap: wrap; */
+
+    /*  Como funcion el flow
+    flex-flow: direction wrap; */
+
+    /* flex-flow: row wrap; */
+    
+    /* justify-content: space-evenly; */
+
+    /* align-items: center; */
+}
+
+.item{
+    
+    background: salmon;
+    width: 80px;
+    height: var(--height);
+    line-height: var(--height);
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+
+    /* order: 0; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    /* flex-basis: 0; */
+    /* flex: grow shrink basis; */
+    /* flex: 1 1 0; */
+    /* flex: 1; */
+}
+
+.item1{
+    
+}
+
+.item2{
+    background: darkslateblue;
+    /* flex-grow: 2; */
+    /* align-self: stretch ;
+    height: auto; */
+}
+
+.item3{
+    background: crimson;
+    /* order: -1; */
+     margin-left: auto;
+}
+
+.item4{
+    background: steelblue;
+}
+
+/* .cta{
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    background: purple;
+} */
+/* 
+@media screen and (min-width:600px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .item4{
+        order: -1;
+    }
+} */
