@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Montserrat", serif;
+    background: #bbbaba4d;
+    padding: 60px 0;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    background: white;
+    max-width: 1200px;
+    box-shadow: 0 2px 20px black;
+    border-radius: 10px;
+}
+
+.month__name{
+    text-align: center;
+    color: #51565d;
+    font-weight: 400;
+    padding: 20px  0;
+}
+
+.days{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    place-items: center;
+    height: 50px;
+    outline: 1px solid #51565d;
+    color:#51565d;
+}
+
+.schedule{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-auto-rows: 60px;
+}
+
+.schedule__day{
+    outline: 1px solid #51565d17;
+    padding: 14px 20px;
+    color: #51565d; 
+}
+
+@media screen and (max-width: 500px) {
+
+    .container{
+        width: 95%;
+    }
+
+    .schedule__day{
+        padding: 7px 5px;
+        text-align: center;
+    }
+    
+}
