@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 400px;
+    width: 80%;
+    margin: 30px auto;
+    background: steelblue;
+    /* background-image:
+        linear-gradient(direction, color stop, color stop) ; */
+    background-image: linear-gradient( crimson 30% ,  pink 80% );
+}
+
+.header{ 
+    
+    height: 600px;
+    padding: 0.1px;
+    background-image: #44A08D;  /* fallback for old browsers */
+    background-image: -webkit-linear-gradient(to left, #09363754, #44a08d75), url(img/luca-bravo-XJXWbfSo2f0-unsplash.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background-image: linear-gradient(to left, #09363757, #44a08d59), url(img/luca-bravo-XJXWbfSo2f0-unsplash.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    font-family: 'Time New Roman';
+    font-size: 30px;
+}
