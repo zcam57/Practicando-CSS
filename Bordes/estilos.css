@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    background: orangered;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+ 
+    /* border: 10px groove brown;
+    top right bottom left
+    border-width:  20px 30px;
+    border-style: groove dashed;
+    border-color: brown steelblue; */
+
+    /* border-top: 10px solid brown;
+    border-right:  5px dashed white;
+    border-bottom: 8px double black ;
+    border-left: 8px dotted steelblue ; */
+
+    border-top-style: double ;
+    border-top-width: 20px; 
+    border-top-color: crimson;
+    
+    border-right-style: dashed;
+    border-right-width: 30px; 
+    border-right-color: white;
+
+    border-bottom-style: solid;
+    border-bottom-width: 25px; 
+    border-bottom-color: steelblue;
+
+    border-left-style: dotted;
+    border-left-width: 15px; 
+    border-left-color: violet;
+
+}
+
+.card{
+    width: 400px;
+    height: auto;
+    margin: 20px  auto;
+    padding: 20px 0;
+    border: 1px solid black;
+}
+
+.img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 40px auto;
+    object-fit: cover;
+    border: 20px groove brown;
+    border-radius:50%;
+    /* border-top-left-radius: 50px;
+    border-top-right-radius:  20px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 100px; */
+}
+
+.cta{
+    display: block;
+    width: 150px;
+    background: crimson;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+}
+
+.name{
+    text-align: center;
+    font: Arial;
+    color: black;
+    
+}
