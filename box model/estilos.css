@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.box{
+   width: 300px;
+   height: 150px;
+}
+
+.box1{
+    background-color: blue;
+    border: 1px solid black;
+    /* margin-top: 50px;
+    margin-bottom: 3cqh;
+    margin-left: 30px;
+    margin-right: 25px;
+    margin: top right bottom left; */
+    /* margin: 50px 30px 30px 25px; */
+    margin-bottom: 50px;
+}
+
+
+.box2{
+    /* opacity: 0.5; */
+   padding:  20px;
+    color: white;
+    background-color: crimson;
+    margin-top: 40px;
+    margin-left: 20px;
+    overflow: hidden;
+    border: 20px dotted orange;
+}
